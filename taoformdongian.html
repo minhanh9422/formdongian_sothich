@@ -2,22 +2,28 @@
 <html>
 <head>
     <title>Your Hobby</title>
+    <style type="text/css">
+    table{border: 0.1cm solid black; width: 15cm; }
+    #ask {color: blue; text-align: right;}
+    div {width: 15cm;}
+    </style>
 </head>
-<body>
-    <table style="width: 100%; border: black; box-sizing: border-box;">
-        <tr style="color:white;background-color: orangered;"><td style="text-align: center;"><b>SỞ THÍCH CỦA BẠN</b></tr></td>
-        <tr><td>Họ và tên</td><td><input type="text"></td></tr>
-        <tr><td>Email</td><td><input type="text"></td></tr>
-        <tr><td>Sở thích</td>
+<body style="line-height: 30px;">
+    <div style="color:white;background-color: orangered;text-align: center;">SỞ THÍCH CỦA BẠN</div>
+    <table>
+        
+        <tr><td id="ask">Họ và tên</td><td><input type="text"></td></tr>
+        <tr><td id="ask">Email</td><td><input type="text"></td></tr>
+        <tr><td id="ask">Sở thích</td>
             <td><input type="checkbox" name="hobby">Thể thao</td>
             <td><input type="checkbox" name="hobby">Âm nhạc</td>
             <td><input type="checkbox" name="hobby">Đọc sách</td>
         </tr>
-        <tr><td><input type="checkbox" name="hobby">Lướt web</td>
+        <tr><td></td><td><input type="checkbox" name="hobby">Lướt web</td>
             <td><input type="checkbox" name="hobby">Chơi game</td>
             <td><input type="checkbox" name="hobby">Điện ảnh</td></tr>
-        <tr><td><input type="checkbox" name="hobby">Du lịch</td></tr>
-        <tr><td><input type="submit" name="send" value="Gửi thông tin">
+        <tr><td></td><td><input type="checkbox" name="hobby">Du lịch</td></tr>
+        <tr><td></td><td><input type="submit" name="send" value="Gửi thông tin"></td><td>
             <input type="submit" name="reset" value="Nhập lại"></td></tr>
     </table>
 </body>
