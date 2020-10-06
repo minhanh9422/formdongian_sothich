@@ -3,8 +3,11 @@
 <head>
     <title>Your Hobby</title>
     <style type="text/css">
-    table{ width: 15cm; }
+    table,td,tr {border: 0.01cm solid black}
+    table,tr{ width: 15cm; }
     #ask {color: blue; text-align: right;}
+    #ans {color: orange;}
+    td {width: 5cm;}
     div {width: 15cm;}
     </style>
 </head>
@@ -12,17 +15,19 @@
     <div style="color:white;background-color: orangered;text-align: center;">SỞ THÍCH CỦA BẠN</div>
     <table>
         
-        <tr><td id="ask">Họ và tên</td><td><input type="text"></td></tr>
-        <tr><td id="ask">Email</td><td><input type="text"></td></tr>
+        <tr><td id="ask">Họ và tên</td><td><input type="text"></td><td></td><td></td></tr>
+        <tr><td id="ask">Email</td><td><input type="text"></td><td></td><td></td></tr>
+    </table>
+    <table>
         <tr><td id="ask">Sở thích</td>
-            <td><input type="checkbox" name="hobby">Thể thao</td>
-            <td><input type="checkbox" name="hobby">Âm nhạc</td>
-            <td><input type="checkbox" name="hobby">Đọc sách</td>
+            <td  id="ans"><input type="checkbox" name="hobby">Thể thao</td>
+            <td id="ans"><input type="checkbox" name="hobby">Âm nhạc</td>
+            <td id="ans"><input type="checkbox" name="hobby">Đọc sách</td>
         </tr>
-        <tr><td></td><td><input type="checkbox" name="hobby">Lướt web</td>
-            <td><input type="checkbox" name="hobby">Chơi game</td>
-            <td><input type="checkbox" name="hobby">Điện ảnh</td></tr>
-        <tr><td></td><td><input type="checkbox" name="hobby">Du lịch</td></tr>
+        <tr><td></td><td id="ans"><input type="checkbox" name="hobby">Lướt web</td>
+            <td id="ans"><input type="checkbox" name="hobby">Chơi game</td>
+            <td id="ans"><input type="checkbox" name="hobby">Điện ảnh</td></tr>
+        <tr><td></td><td id="ans"><input type="checkbox" name="hobby">Du lịch</td></tr>
         <tr><td></td><td><input type="submit" name="send" value="Gửi thông tin"></td><td>
             <input type="submit" name="reset" value="Nhập lại"></td></tr>
     </table>
